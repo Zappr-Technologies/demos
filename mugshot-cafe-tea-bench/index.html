@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mugshot Cafe Tea Bench · Jayanagar, Bengaluru</title>
+<meta name="description" content="A Jayanagar cafe that Google reviewers describe as warm, hygienic and easy to linger in. Demo website crafted by Zappr.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root { --ease: cubic-bezier(.22,1,.36,1); }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans),system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+.nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.4) blur(16px);background:color-mix(in srgb,var(--bg) 86%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.mono{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:var(--display),serif;font-weight:600;background:var(--accent);color:var(--on-accent);letter-spacing:.02em;font-size:1rem;flex:none}
+.brand-name{font-family:var(--display),serif;font-weight:600;font-size:1.05rem;letter-spacing:.01em;line-height:1.15}
+.brand-sub{display:block;font-family:var(--sans),sans-serif;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-top:.1rem}
+.nav-links{display:flex;gap:1.15rem;align-items:center;font-size:.88rem}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:500}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;border-radius:999px;padding:.85rem 1.2rem;text-decoration:none;font-weight:600;font-size:.92rem;border:1px solid transparent;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-1px)}
+.btn-solid{background:var(--accent);color:var(--on-accent);box-shadow:0 10px 24px color-mix(in srgb,var(--accent) 28%,transparent)}
+.btn-ghost{border-color:color-mix(in srgb,var(--ink) 16%,transparent);color:var(--ink);background:color-mix(in srgb,var(--bg) 70%,transparent)}
+.nav-cta{display:flex;gap:.45rem}
+.menu-btn{display:none;background:none;border:0;color:var(--ink);font-size:1.4rem;cursor:pointer}
+.hero{position:relative;min-height:92svh;display:grid;align-items:end;padding:6rem 0 4.5rem;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;background:var(--hero-bg)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:var(--hero-veil)}
+.hero-art{position:absolute;inset:auto -10% -20% auto;width:72%;height:80%;pointer-events:none;z-index:1;opacity:.9}
+.hero .wrap{position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--accent-2);margin-bottom:1rem}
+.kicker:before{content:"";width:1.6rem;height:1px;background:currentColor}
+.hero h1{font-family:var(--display),serif;font-weight:600;font-size:clamp(2.5rem,8vw,5.6rem);line-height:.95;letter-spacing:-.03em;max-width:14ch;color:var(--hero-ink)}
+.hero-lead{max-width:38rem;margin-top:1.25rem;font-size:1.08rem;color:var(--hero-muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
+.stats{display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:2.6rem;padding-top:1.5rem;border-top:1px solid color-mix(in srgb,var(--hero-ink) 16%,transparent)}
+.stat b{display:block;font-family:var(--display),serif;font-size:1.7rem;line-height:1;color:var(--hero-ink)}
+.stat span{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-muted)}
+section{padding:5.2rem 0}
+.sec-title{font-family:var(--display),serif;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.03em;line-height:1.05;margin-bottom:.7rem}
+.sec-lead{color:var(--muted);max-width:38rem;margin-bottom:2.2rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:var(--card);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);border-radius:1.25rem;padding:1.35rem 1.3rem}
+.card h3{font-family:var(--display),serif;font-size:1.25rem;margin:.35rem 0 .4rem;letter-spacing:-.02em}
+.card p{color:var(--muted);font-size:.95rem}
+.ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 14%,var(--bg));color:var(--accent)}
+.reviews{display:grid;grid-template-columns:1.1fr 1fr;gap:1rem}
+.review{background:var(--card);border-radius:1.25rem;padding:1.4rem;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+.stars{color:var(--accent-2);letter-spacing:.12em;font-size:.9rem;margin-bottom:.6rem}
+.review .who{margin-top:1rem;font-size:.78rem;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem}
+.tile{min-height:160px;border-radius:1.15rem;position:relative;overflow:hidden}
+.tile span{position:absolute;left:1rem;bottom:1rem;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-tile);font-weight:600}
+.visit{display:grid;grid-template-columns:1.1fr .9fr;gap:1.2rem}
+.visit-card{background:var(--card);border-radius:1.4rem;padding:1.6rem;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+.visit h3{font-family:var(--display),serif;font-size:1.35rem;margin-bottom:.5rem}
+.visit dl{display:grid;grid-template-columns:6.5rem 1fr;gap:.35rem 1rem;margin:1rem 0;font-size:.95rem}
+.visit dt{color:var(--muted)}
+.hours-grid{display:grid;grid-template-columns:7.5rem 1fr;gap:.3rem 1rem;font-size:.95rem;margin:1rem 0}
+.cta-band{margin:0 0 4rem;border-radius:1.8rem;padding:2.4rem 2rem;background:var(--cta-bg);color:var(--cta-ink);display:flex;justify-content:space-between;align-items:center;gap:1.2rem}
+.cta-band h2{font-family:var(--display),serif;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.03em}
+.cta-band p{opacity:.84;margin-top:.35rem}
+footer{padding:1.4rem 0 2.2rem;color:var(--muted);font-size:.78rem;border-top:1px solid color-mix(in srgb,var(--ink) 8%,transparent);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.demo-note{font-size:.8rem;color:var(--muted);margin-top:1.2rem;max-width:40rem}
+.muted{color:var(--muted)}
+.reveal{opacity:0;transform:translateY(22px);animation:rise .9s var(--ease) forwards;animation-timeline:view();animation-range:entry 0% entry 40%}
+@supports not (animation-timeline:view()){
+  .reveal{opacity:1;transform:none;animation:none}
+  .reveal.js-hide{opacity:0;transform:translateY(22px)}
+  .reveal.js-in{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (max-width:860px){
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .nav.open .nav-links{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--bg);padding:1rem 1rem 1.2rem;border-bottom:1px solid color-mix(in srgb,var(--ink) 10%,transparent);align-items:flex-start}
+  .grid-3,.reviews,.visit,.gallery{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .cta-band{flex-direction:column;align-items:flex-start}
+  .hero{min-height:88svh;padding:5.2rem 0 3.4rem}
+  .nav-cta .btn-ghost{display:none}
+}
+
+:root{--bg:#F7F1EA;--ink:#2A1C16;--muted:#6B574C;--card:#FFFDF9;--accent:#7A3E2B;--accent-2:#C9844A;--on-accent:#FFF8F1;--hero-ink:#FFF8F1;--hero-muted:#E8D5C4;--hero-bg:linear-gradient(165deg,#3A241C 0%,#6B3224 55%,#9A5A38 100%);--hero-veil:radial-gradient(700px 380px at 15% 20%,rgba(201,132,74,.35),transparent 50%);--cta-bg:#3A241C;--cta-ink:#FFF8F1;--display:"Cormorant Garamond",serif;--sans:"Nunito",sans-serif;--on-tile:#FFF8F1}.hero-art{background:radial-gradient(closest-side,rgba(255,248,241,.15),transparent 70%),conic-gradient(from 200deg at 50% 50%,rgba(201,132,74,.0),rgba(201,132,74,.35),transparent 40%);border-radius:40% 60% 50% 50%}.tile.t0{background:linear-gradient(145deg,#7A3E2B,#3A241C)}.tile.t1{background:linear-gradient(145deg,#C9844A,#8C5A2E)}.tile.t2{background:linear-gradient(145deg,#E8D5C4,#C9B49F);--on-tile:#2A1C16}.tile.t3{background:linear-gradient(145deg,#2A1C16,#4A3128)}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="mono">M</span>
+      <span><span class="brand-name">Mugshot</span><span class="brand-sub">Tea Bench · Jayanagar</span></span>
+    </a>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+    <nav class="nav-links"><a href='#about'>About</a> <a href='#services'>The café</a> <a href='#reviews'>Reviews</a> <a href='#visit'>Visit</a></nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:+917975047772"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.9 2z"/></svg> Call</a>
+      <a class="btn btn-solid" href="https://wa.me/917975047772" target="_blank" rel="noopener"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg> WhatsApp</a>
+    </div>
+  </div>
+</header>
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-art" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="kicker">Tea Bench · Jayanagar</div>
+    <h1>A warm cup<br>and a place<br>to linger.</h1>
+    <p class="hero-lead">Mugshot Cafe Tea Bench sits in Jayanagar’s 4th T Block East. Google lists it as a café, open through the day. Reviewers talk about a cozy, vibrant room, hospitable service, and dishes they describe as hygienic and carefully made.</p>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="https://wa.me/917975047772" target="_blank" rel="noopener"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg> Message on WhatsApp</a>
+      <a class="btn btn-ghost" href="#visit">Find us</a>
+    </div>
+    <div class="stats"><div class='stat'><b>4.9</b><span>Google rating</span></div><div class='stat'><b>279</b><span>Google reviews</span></div><div class='stat'><b>10 AM–10 PM</b><span>All week, as listed</span></div></div>
+  </div>
+</section>
+<section id="about">
+  <div class="wrap">
+    <h2 class="sec-title reveal">A café that reviewers call warm on arrival.</h2>
+    <p class="sec-lead reveal">The Google listing places Mugshot Cafe Tea Bench in 4th T Block East, Jayanagar, and classifies it as a café. In a September 2025 review, a visitor wrote that they were greeted with warmth and professionalism and that the ambience is cozy yet vibrant — perfect for catching up with friends or enjoying a quiet solo meal. Another reviewer in October 2025 praised hygienic organic dishes served with great love and respect, and named a staff member, Sanjay, for hospitality.</p>
+  </div>
+</section>
+<section id="services">
+  <div class="wrap">
+    <h2 class="sec-title reveal">How guests describe the visit</h2>
+    <p class="sec-lead reveal">We have not invented a menu or prices. These notes come from the listing category and from quoted Google reviews.</p>
+    <div class="grid-3"><article class='card reveal'><div class='ico'><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M8 7c0-2 1-3 2-3s2 1 2 3"/><path d="M5 10h10v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4v-5z"/><path d="M15 11h2a2 2 0 1 1 0 4h-2"/></svg></div><h3>Tea bench &amp; café</h3><p>Listed simply as a café. The Tea Bench in the name is the tone reviewers pick up — a place to sit with a cup, not rush through a meal.</p></article><article class='card reveal'><div class='ico'><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M5 19c8 0 14-8 14-16-8 0-16 6-16 14 4-2 8-2 8-2"/><path d="M5 19s2-6 10-10"/></svg></div><h3>Careful cooking</h3><p>An October 2025 Google review described hygienic organic dishes being served to customers with great love and respect.</p></article><article class='card reveal'><div class='ico'><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.6-7 10-7 10z"/></svg></div><h3>Service that is noticed</h3><p>Guests mention hospitable, service-oriented staff. One review called out Sanjay by name. Another was glad that menu items they wanted were available.</p></article></div>
+  </div>
+</section>
+<section id="reviews">
+  <div class="wrap">
+    <h2 class="sec-title reveal">What people say on Google</h2>
+    <p class="sec-lead reveal">A few recent comments from the public Google listing, quoted in their own words.</p>
+    <div class="reviews"><article class='review reveal'><div class='stars'>★★★★★</div><p>“Mugshot is an excellent cafe with very hygenic organic dishes being served to customers with great love and respect. The staffs at Mugshot are too very hospitable and service oriented.”</p><div class='who'>Google review, Oct 2025 · wording from the public listing</div></article><article class='review reveal'><div class='stars'>★★★★★</div><p>“From the moment I stepped into Mugshot Cafe, I was greeted with warmth and professionalism. The ambiance is cozy yet vibrant—perfect for catching up with friends or enjoying a quiet solo meal.”</p><div class='who'>Google review, Sep 2025 · wording from the public listing</div></article><article class='review reveal'><div class='stars'>★★★★★</div><p>“Nice, Available all of the menus items.”</p><div class='who'>Google review, Nov 2025 · wording from the public listing</div></article></div>
+  </div>
+</section>
+<section id="gallery">
+  <div class="wrap">
+    <h2 class="sec-title reveal">Warm wood, terracotta, cream</h2>
+    <p class="sec-lead reveal">A visual impression of the space — colours and motifs only, not photographs.</p>
+    <div class="gallery reveal"><div class='tile t0'><span>Jayanagar East</span></div><div class='tile t1'><span>Tea bench</span></div><div class='tile t2'><span>Cozy room</span></div><div class='tile t3'><span>Open late</span></div></div>
+  </div>
+</section>
+<section id="visit">
+  <div class="wrap visit">
+    <div class="visit-card reveal">
+      <h3>Visit</h3>
+      <dl>
+        <dt>Address</dt><dd>4th T Block East, Jayanagar, Bengaluru, Karnataka 560041</dd>
+        <dt>Phone</dt><dd><a href="tel:+917975047772">+91 79750 47772</a></dd>
+      </dl>
+      
+      <p><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Mugshot+cafe+Tea+Bench%2C+4th+T+Block+East%2C+Jayanagar%2C+Bengaluru+560041" target="_blank" rel="noopener"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.3"/></svg> Open in Google Maps</a></p>
+    </div>
+    <div class="visit-card reveal">
+      <h3>Hours</h3>
+      <div class='hours-grid'><div>Monday</div><div>10 AM–10 PM</div><div>Tuesday</div><div>10 AM–10 PM</div><div>Wednesday</div><div>10 AM–10 PM</div><div>Thursday</div><div>10 AM–10 PM</div><div>Friday</div><div>10 AM–10 PM</div><div>Saturday</div><div>10 AM–10 PM</div><div>Sunday</div><div>10 AM–10 PM</div></div>
+      <p class="demo-note">Facts on this page are taken from the public Google listing and published coverage. No prices or awards have been added.</p>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+  <div class="cta-band reveal">
+    <div>
+      <h2>Save a seat with a message.</h2>
+      <p>WhatsApp or call the number on the Google listing — we have not added any booking that isn&#x27;t already public.</p>
+    </div>
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+      <a class="btn btn-solid" href="https://wa.me/917975047772" target="_blank" rel="noopener"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg> WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+917975047772"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.9 2z"/></svg> +91 79750 47772</a>
+    </div>
+  </div>
+</div>
+<footer class="wrap">
+  <div>Mugshot Cafe Tea Bench · Bengaluru</div>
+  <div>Demo crafted by Zappr</div>
+</footer>
+<script>
+(function(){
+  const nav=document.querySelector('.nav');
+  const btn=document.querySelector('.menu-btn');
+  if(btn){btn.addEventListener('click',()=>nav.classList.toggle('open'));}
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  const heroBg=document.querySelector('.hero-bg');
+  window.addEventListener('scroll',()=>{
+    if(!heroBg) return;
+    heroBg.style.transform='translateY('+Math.min(window.scrollY*0.22,140)+'px)';
+  },{passive:true});
+  if(!CSS.supports('animation-timeline','view()')){
+    const io=new IntersectionObserver((ents)=>{
+      ents.forEach(e=>{if(e.isIntersecting){e.target.classList.add('js-in');e.target.classList.remove('js-hide')}})
+    },{threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>{el.classList.add('js-hide');io.observe(el)});
+  }
+})();
+</script>
+</body>
+</html>
