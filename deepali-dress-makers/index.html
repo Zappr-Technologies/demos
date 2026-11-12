@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deepali Dress Makers · Kuvempunagar, Mysuru</title>
+<meta name="description" content="A Kuvempunagar ladies’ tailor with a 5.0 Google rating from 72 reviews. Guests mention churidar, blouse and saree kuchu work. Demo crafted by Zappr.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root { --ease: cubic-bezier(.22,1,.36,1); }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans),system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+.nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.4) blur(16px);background:color-mix(in srgb,var(--bg) 86%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.mono{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:var(--display),serif;font-weight:600;background:var(--accent);color:var(--on-accent);letter-spacing:.02em;font-size:1rem;flex:none}
+.brand-name{font-family:var(--display),serif;font-weight:600;font-size:1.05rem;letter-spacing:.01em;line-height:1.15}
+.brand-sub{display:block;font-family:var(--sans),sans-serif;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-top:.1rem}
+.nav-links{display:flex;gap:1.15rem;align-items:center;font-size:.88rem}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:500}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;border-radius:999px;padding:.85rem 1.2rem;text-decoration:none;font-weight:600;font-size:.92rem;border:1px solid transparent;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-1px)}
+.btn-solid{background:var(--accent);color:var(--on-accent);box-shadow:0 10px 24px color-mix(in srgb,var(--accent) 28%,transparent)}
+.btn-ghost{border-color:color-mix(in srgb,var(--ink) 16%,transparent);color:var(--ink);background:color-mix(in srgb,var(--bg) 70%,transparent)}
+.nav-cta{display:flex;gap:.45rem}
+.menu-btn{display:none;background:none;border:0;color:var(--ink);font-size:1.4rem;cursor:pointer}
+.hero{position:relative;min-height:92svh;display:grid;align-items:end;padding:6rem 0 4.5rem;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;background:var(--hero-bg)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:var(--hero-veil)}
+.hero-art{position:absolute;inset:auto -10% -20% auto;width:72%;height:80%;pointer-events:none;z-index:1;opacity:.9}
+.hero .wrap{position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--accent-2);margin-bottom:1rem}
+.kicker:before{content:"";width:1.6rem;height:1px;background:currentColor}
+.hero h1{font-family:var(--display),serif;font-weight:600;font-size:clamp(2.5rem,8vw,5.6rem);line-height:.95;letter-spacing:-.03em;max-width:14ch;color:var(--hero-ink)}
+.hero-lead{max-width:38rem;margin-top:1.25rem;font-size:1.08rem;color:var(--hero-muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
+.stats{display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:2.6rem;padding-top:1.5rem;border-top:1px solid color-mix(in srgb,var(--hero-ink) 16%,transparent)}
+.stat b{display:block;font-family:var(--display),serif;font-size:1.7rem;line-height:1;color:var(--hero-ink)}
+.stat span{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-muted)}
+section{padding:5.2rem 0}
+.sec-title{font-family:var(--display),serif;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.03em;line-height:1.05;margin-bottom:.7rem}
+.sec-lead{color:var(--muted);max-width:38rem;margin-bottom:2.2rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:var(--card);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);border-radius:1.25rem;padding:1.35rem 1.3rem}
+.card h3{font-family:var(--display),serif;font-size:1.25rem;margin:.35rem 0 .4rem;letter-spacing:-.02em}
+.card p{color:var(--muted);font-size:.95rem}
+.ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 14%,var(--bg));color:var(--accent)}
+.reviews{display:grid;grid-template-columns:1.1fr 1fr;gap:1rem}
+.review{background:var(--card);border-radius:1.25rem;padding:1.4rem;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+.stars{color:var(--accent-2);letter-spacing:.12em;font-size:.9rem;margin-bottom:.6rem}
+.review .who{margin-top:1rem;font-size:.78rem;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem}
+.tile{min-height:160px;border-radius:1.15rem;position:relative;overflow:hidden}
+.tile span{position:absolute;left:1rem;bottom:1rem;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-tile);font-weight:600}
+.visit{display:grid;grid-template-columns:1.1fr .9fr;gap:1.2rem}
+.visit-card{background:var(--card);border-radius:1.4rem;padding:1.6rem;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+.visit h3{font-family:var(--display),serif;font-size:1.35rem;margin-bottom:.5rem}
+.visit dl{display:grid;grid-template-columns:6.5rem 1fr;gap:.35rem 1rem;margin:1rem 0;font-size:.95rem}
+.visit dt{color:var(--muted)}
+.hours-grid{display:grid;grid-template-columns:7.5rem 1fr;gap:.3rem 1rem;font-size:.95rem;margin:1rem 0}
+.cta-band{margin:0 0 4rem;border-radius:1.8rem;padding:2.4rem 2rem;background:var(--cta-bg);color:var(--cta-ink);display:flex;justify-content:space-between;align-items:center;gap:1.2rem}
+.cta-band h2{font-family:var(--display),serif;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.03em}
+.cta-band p{opacity:.84;margin-top:.35rem}
+footer{padding:1.4rem 0 2.2rem;color:var(--muted);font-size:.78rem;border-top:1px solid color-mix(in srgb,var(--ink) 8%,transparent);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.demo-note{font-size:.8rem;color:var(--muted);margin-top:1.2rem;max-width:40rem}
+.muted{color:var(--muted)}
+.reveal{opacity:0;transform:translateY(22px);animation:rise .9s var(--ease) forwards;animation-timeline:view();animation-range:entry 0% entry 40%}
+@supports not (animation-timeline:view()){
+  .reveal{opacity:1;transform:none;animation:none}
+  .reveal.js-hide{opacity:0;transform:translateY(22px)}
+  .reveal.js-in{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (max-width:860px){
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .nav.open .nav-links{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--bg);padding:1rem 1rem 1.2rem;border-bottom:1px solid color-mix(in srgb,var(--ink) 10%,transparent);align-items:flex-start}
+  .grid-3,.reviews,.visit,.gallery{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .cta-band{flex-direction:column;align-items:flex-start}
+  .hero{min-height:88svh;padding:5.2rem 0 3.4rem}
+  .nav-cta .btn-ghost{display:none}
+}
+
+:root{--bg:#F7F0EA;--ink:#3A241C;--muted:#6E5A50;--card:#FFF9F4;--accent:#9C4A32;--accent-2:#C9A16B;--on-accent:#FFF7F0;--hero-ink:#FFF7F0;--hero-muted:#E8D6C8;--hero-bg:linear-gradient(160deg,#3A241C 0%,#6B3224 50%,#9C4A32 100%);--hero-veil:radial-gradient(650px 400px at 80% 20%,rgba(201,161,107,.28),transparent 55%);--cta-bg:#9C4A32;--cta-ink:#FFF7F0;--display:"Cormorant Garamond",serif;--sans:"Nunito Sans",sans-serif;--on-tile:#FFF7F0}.hero h1{font-style:italic}.hero-art{background:radial-gradient(circle at 60% 40%,rgba(255,247,240,.15),transparent 62%)}.tile.t0{background:linear-gradient(145deg,#9C4A32,#6B3224)}.tile.t1{background:linear-gradient(145deg,#C9A16B,#8C6A32);--on-tile:#3A241C}.tile.t2{background:linear-gradient(145deg,#3A241C,#1E120E)}.tile.t3{background:linear-gradient(145deg,#F7F0EA,#E8D6C8);--on-tile:#3A241C}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="mono">D</span>
+      <span><span class="brand-name">Deepali</span><span class="brand-sub">Ladies&#x27; tailor · Kuvempunagar</span></span>
+    </a>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+    <nav class="nav-links"><a href='#about'>About</a> <a href='#services'>Work</a> <a href='#reviews'>Reviews</a> <a href='#visit'>Visit</a></nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:+919449131388"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.9 2z"/></svg> Call</a>
+      <a class="btn btn-solid" href="https://wa.me/919449131388" target="_blank" rel="noopener"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg> WhatsApp</a>
+    </div>
+  </div>
+</header>
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-art" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="kicker">Ladies&#x27; tailor · Kuvempunagar</div>
+    <h1>Blouse, churidar,<br>saree kuchu.</h1>
+    <p class="hero-lead">Deepali Dress Makers is at 431, Navilu Road, near Somani College, Kuvempunagar. Google rates the shop 5.0 from 72 reviews. Recent guests mention churidar stitching, comfortable blouse fitting, and saree kuchu work, with timely delivery.</p>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="https://wa.me/919449131388" target="_blank" rel="noopener"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg> Message on WhatsApp</a>
+      <a class="btn btn-ghost" href="#visit">Find us</a>
+    </div>
+    <div class="stats"><div class='stat'><b>5.0</b><span>Google rating</span></div><div class='stat'><b>72</b><span>Google reviews</span></div><div class='stat'><b>9 am–9:30 pm</b><span>Mon–Sat, as listed</span></div></div>
+  </div>
+</section>
+<section id="about">
+  <div class="wrap">
+    <h2 class="sec-title reveal">A Navilu Road ladies’ tailor that recent guests keep recommending.</h2>
+    <p class="sec-lead reveal">The Google listing places Deepali Dress Makers at 431, Navilu Road, near Somani College, Kuvempunagar. Hours are 9 am–9:30 pm Monday to Saturday, and 10 am–2 pm on Sunday. December 2025 reviews praise churidar stitching, “precise blouse fitting,” and “elegant saree kuchu work,” and mention professionalism and timely delivery. Prices and a formal service list were not published on the listing we checked.</p>
+  </div>
+</section>
+<section id="services">
+  <div class="wrap">
+    <h2 class="sec-title reveal">Work guests named in 2025</h2>
+    <p class="sec-lead reveal">Only garments mentioned in public Google reviews are listed here.</p>
+    <div class="grid-3"><article class='card reveal'><div class='ico'><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M19 5c-2 2-8 4-8 10 0 3 2 4 2 4"/><circle cx="17.5" cy="6.5" r="2"/></svg></div><h3>Churidar stitching</h3><p>A December 2025 review said of a churidar top: “Fitting is good, stiching is good, he didn’t miss anything.”</p></article><article class='card reveal'><div class='ico'><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M4 7l4-3 4 3 4-3 4 3v13H4V7z"/><path d="M8 7v3"/></svg></div><h3>Blouse fitting</h3><p>Another December review called the blouse stitching “so comfortable and fits beautifully.”</p></article><article class='card reveal'><div class='ico'><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Saree kuchu and alterations</h3><p>Guests in December 2025 also mentioned saree kuchu work and “flawless alterations,” with timely delivery.</p></article></div>
+  </div>
+</section>
+<section id="reviews">
+  <div class="wrap">
+    <h2 class="sec-title reveal">What people say on Google</h2>
+    <p class="sec-lead reveal">A few recent comments from the public Google listing, quoted in their own words.</p>
+    <div class="reviews"><article class='review reveal'><div class='stars'>★★★★★</div><p>“I stitched one chudidar top.. Fitting is good, stiching is good, he didn&#x27;t miss anything, so I prefer this shop for chudidar stiching.”</p><div class='who'>Google review, Dec 2025 · wording from the public listing</div></article><article class='review reveal'><div class='stars'>★★★★★</div><p>“One of the best tailors I have come across! Their blouse stitching is so comfortable and fits beautifully. The saree kuchu they did for me turned out amazing. Very happy with their work!”</p><div class='who'>Google review, Dec 2025 · wording from the public listing</div></article><article class='review reveal'><div class='stars'>★★★★★</div><p>“Extremely satisfied with their tailoring services. Theu delivers precise blouse fitting, elegant saree kuchu work and flawless alterations. They maintain good professionalism and timely delivery.”</p><div class='who'>Google review, Dec 2025 · wording from the public listing</div></article></div>
+  </div>
+</section>
+<section id="gallery">
+  <div class="wrap">
+    <h2 class="sec-title reveal">Terracotta, cream, gold</h2>
+    <p class="sec-lead reveal">A visual impression of the space — colours and motifs only, not photographs.</p>
+    <div class="gallery reveal"><div class='tile t0'><span>Kuvempunagar</span></div><div class='tile t1'><span>Blouse work</span></div><div class='tile t2'><span>Saree kuchu</span></div><div class='tile t3'><span>Open Sundays</span></div></div>
+  </div>
+</section>
+<section id="visit">
+  <div class="wrap visit">
+    <div class="visit-card reveal">
+      <h3>Visit</h3>
+      <dl>
+        <dt>Address</dt><dd>431, Navilu Rd, near Somani College, Kuvempunagar, Mysuru 570023</dd>
+        <dt>Phone</dt><dd><a href="tel:+919449131388">+91 94491 31388</a></dd>
+      </dl>
+      
+      <p><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Deepali+Dress+Makers%2C+431+Navilu+Rd%2C+Kuvempunagar+Mysuru" target="_blank" rel="noopener"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.3"/></svg> Open in Google Maps</a></p>
+    </div>
+    <div class="visit-card reveal">
+      <h3>Hours</h3>
+      <div class='hours-grid'><div>Monday</div><div>9 am–9:30 pm</div><div>Tuesday</div><div>9 am–9:30 pm</div><div>Wednesday</div><div>9 am–9:30 pm</div><div>Thursday</div><div>9 am–9:30 pm</div><div>Friday</div><div>9 am–9:30 pm</div><div>Saturday</div><div>9 am–9:30 pm</div><div>Sunday</div><div>10 am–2 pm</div></div>
+      <p class="demo-note">Facts on this page are taken from the public Google listing and published coverage. No prices or awards have been added.</p>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+  <div class="cta-band reveal">
+    <div>
+      <h2>Bring a blouse or a saree.</h2>
+      <p>WhatsApp or call the listing number to check a turnaround time.</p>
+    </div>
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+      <a class="btn btn-solid" href="https://wa.me/919449131388" target="_blank" rel="noopener"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg> WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+919449131388"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.9 2z"/></svg> +91 94491 31388</a>
+    </div>
+  </div>
+</div>
+<footer class="wrap">
+  <div>Deepali Dress Makers · Mysuru</div>
+  <div>Demo crafted by Zappr</div>
+</footer>
+<script>
+(function(){
+  const nav=document.querySelector('.nav');
+  const btn=document.querySelector('.menu-btn');
+  if(btn){btn.addEventListener('click',()=>nav.classList.toggle('open'));}
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  const heroBg=document.querySelector('.hero-bg');
+  window.addEventListener('scroll',()=>{
+    if(!heroBg) return;
+    heroBg.style.transform='translateY('+Math.min(window.scrollY*0.22,140)+'px)';
+  },{passive:true});
+  if(!CSS.supports('animation-timeline','view()')){
+    const io=new IntersectionObserver((ents)=>{
+      ents.forEach(e=>{if(e.isIntersecting){e.target.classList.add('js-in');e.target.classList.remove('js-hide')}})
+    },{threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>{el.classList.add('js-hide');io.observe(el)});
+  }
+})();
+</script>
+</body>
+</html>
