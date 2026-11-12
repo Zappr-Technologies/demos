@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vin&#x27;s Fitness · Chamaraja Double Road, Mysuru</title>
+<meta name="description" content="A compact Mysuru gym with a 4.7 Google rating from 63 reviews. Members name Kishore sir. Demo crafted by Zappr.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root { --ease: cubic-bezier(.22,1,.36,1); }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans),system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+.nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.4) blur(16px);background:color-mix(in srgb,var(--bg) 86%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.mono{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:var(--display),serif;font-weight:600;background:var(--accent);color:var(--on-accent);letter-spacing:.02em;font-size:1rem;flex:none}
+.brand-name{font-family:var(--display),serif;font-weight:600;font-size:1.05rem;letter-spacing:.01em;line-height:1.15}
+.brand-sub{display:block;font-family:var(--sans),sans-serif;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-top:.1rem}
+.nav-links{display:flex;gap:1.15rem;align-items:center;font-size:.88rem}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:500}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;border-radius:999px;padding:.85rem 1.2rem;text-decoration:none;font-weight:600;font-size:.92rem;border:1px solid transparent;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-1px)}
+.btn-solid{background:var(--accent);color:var(--on-accent);box-shadow:0 10px 24px color-mix(in srgb,var(--accent) 28%,transparent)}
+.btn-ghost{border-color:color-mix(in srgb,var(--ink) 16%,transparent);color:var(--ink);background:color-mix(in srgb,var(--bg) 70%,transparent)}
+.nav-cta{display:flex;gap:.45rem}
+.menu-btn{display:none;background:none;border:0;color:var(--ink);font-size:1.4rem;cursor:pointer}
+.hero{position:relative;min-height:92svh;display:grid;align-items:end;padding:6rem 0 4.5rem;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;background:var(--hero-bg)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:var(--hero-veil)}
+.hero-art{position:absolute;inset:auto -10% -20% auto;width:72%;height:80%;pointer-events:none;z-index:1;opacity:.9}
+.hero .wrap{position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--accent-2);margin-bottom:1rem}
+.kicker:before{content:"";width:1.6rem;height:1px;background:currentColor}
+.hero h1{font-family:var(--display),serif;font-weight:600;font-size:clamp(2.5rem,8vw,5.6rem);line-height:.95;letter-spacing:-.03em;max-width:14ch;color:var(--hero-ink)}
+.hero-lead{max-width:38rem;margin-top:1.25rem;font-size:1.08rem;color:var(--hero-muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
+.stats{display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:2.6rem;padding-top:1.5rem;border-top:1px solid color-mix(in srgb,var(--hero-ink) 16%,transparent)}
+.stat b{display:block;font-family:var(--display),serif;font-size:1.7rem;line-height:1;color:var(--hero-ink)}
+.stat span{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-muted)}
+section{padding:5.2rem 0}
+.sec-title{font-family:var(--display),serif;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.03em;line-height:1.05;margin-bottom:.7rem}
+.sec-lead{color:var(--muted);max-width:38rem;margin-bottom:2.2rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:var(--card);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);border-radius:1.25rem;padding:1.35rem 1.3rem}
+.card h3{font-family:var(--display),serif;font-size:1.25rem;margin:.35rem 0 .4rem;letter-spacing:-.02em}
+.card p{color:var(--muted);font-size:.95rem}
+.ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 14%,var(--bg));color:var(--accent)}
+.reviews{display:grid;grid-template-columns:1.1fr 1fr;gap:1rem}
+.review{background:var(--card);border-radius:1.25rem;padding:1.4rem;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+.stars{color:var(--accent-2);letter-spacing:.12em;font-size:.9rem;margin-bottom:.6rem}
+.review .who{margin-top:1rem;font-size:.78rem;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem}
+.tile{min-height:160px;border-radius:1.15rem;position:relative;overflow:hidden}
+.tile span{position:absolute;left:1rem;bottom:1rem;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-tile);font-weight:600}
+.visit{display:grid;grid-template-columns:1.1fr .9fr;gap:1.2rem}
+.visit-card{background:var(--card);border-radius:1.4rem;padding:1.6rem;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+.visit h3{font-family:var(--display),serif;font-size:1.35rem;margin-bottom:.5rem}
+.visit dl{display:grid;grid-template-columns:6.5rem 1fr;gap:.35rem 1rem;margin:1rem 0;font-size:.95rem}
+.visit dt{color:var(--muted)}
+.hours-grid{display:grid;grid-template-columns:7.5rem 1fr;gap:.3rem 1rem;font-size:.95rem;margin:1rem 0}
+.cta-band{margin:0 0 4rem;border-radius:1.8rem;padding:2.4rem 2rem;background:var(--cta-bg);color:var(--cta-ink);display:flex;justify-content:space-between;align-items:center;gap:1.2rem}
+.cta-band h2{font-family:var(--display),serif;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.03em}
+.cta-band p{opacity:.84;margin-top:.35rem}
+footer{padding:1.4rem 0 2.2rem;color:var(--muted);font-size:.78rem;border-top:1px solid color-mix(in srgb,var(--ink) 8%,transparent);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.demo-note{font-size:.8rem;color:var(--muted);margin-top:1.2rem;max-width:40rem}
+.muted{color:var(--muted)}
+.reveal{opacity:0;transform:translateY(22px);animation:rise .9s var(--ease) forwards;animation-timeline:view();animation-range:entry 0% entry 40%}
+@supports not (animation-timeline:view()){
+  .reveal{opacity:1;transform:none;animation:none}
+  .reveal.js-hide{opacity:0;transform:translateY(22px)}
+  .reveal.js-in{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (max-width:860px){
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .nav.open .nav-links{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--bg);padding:1rem 1rem 1.2rem;border-bottom:1px solid color-mix(in srgb,var(--ink) 10%,transparent);align-items:flex-start}
+  .grid-3,.reviews,.visit,.gallery{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .cta-band{flex-direction:column;align-items:flex-start}
+  .hero{min-height:88svh;padding:5.2rem 0 3.4rem}
+  .nav-cta .btn-ghost{display:none}
+}
+
+:root{--bg:#F3F0E8;--ink:#1A1C14;--muted:#5E6354;--card:#FFFcf6;--accent:#B56A14;--accent-2:#2F4A32;--on-accent:#FFF8EC;--hero-ink:#FFF8EC;--hero-muted:#D8D2C0;--hero-bg:linear-gradient(160deg,#1A1C14 0%,#2F4A32 55%,#4A6A3C 100%);--hero-veil:radial-gradient(650px 400px at 82% 18%,rgba(181,106,20,.28),transparent 55%);--cta-bg:#B56A14;--cta-ink:#FFF8EC;--display:"Oswald",sans-serif;--sans:"Karla",sans-serif;--on-tile:#FFF8EC}.hero h1,.sec-title,.brand-name,.cta-band h2,.stat b{letter-spacing:.03em;text-transform:uppercase}.hero-art{background:repeating-linear-gradient(25deg,rgba(255,248,236,.08) 0 10px,transparent 10px 22px)}.tile.t0{background:linear-gradient(145deg,#B56A14,#7A450C)}.tile.t1{background:linear-gradient(145deg,#2F4A32,#1A1C14)}.tile.t2{background:linear-gradient(145deg,#1A1C14,#0C0D0A)}.tile.t3{background:linear-gradient(145deg,#F3F0E8,#D8D2C0);--on-tile:#1A1C14}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="mono">V</span>
+      <span><span class="brand-name">Vin's Fitness</span><span class="brand-sub">Gymnasium · Chamaraja Double Road</span></span>
+    </a>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+    <nav class="nav-links"><a href='#about'>About</a> <a href='#services'>Training</a> <a href='#reviews'>Reviews</a> <a href='#visit'>Visit</a></nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:+918861187983"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.9 2z"/></svg> Call</a>
+      <a class="btn btn-solid" href="https://wa.me/918861187983" target="_blank" rel="noopener"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg> WhatsApp</a>
+    </div>
+  </div>
+</header>
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-art" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="kicker">Gymnasium · Chamaraja Double Road</div>
+    <h1>A morning floor,<br>and a named coach.</h1>
+    <p class="hero-lead">Vin&#x27;s Fitness is on the 2nd floor at 515/1/A, Chamaraja Double Road, Sunnadakeri. Google rates it 4.7 from 63 reviews. Listed hours are 6–10 AM, Monday to Saturday, closed Sunday. Members name Kishore sir, and one April 2024 review described it honestly as a small gym with minimum equipment and underground parking.</p>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="https://wa.me/918861187983" target="_blank" rel="noopener"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg> Message on WhatsApp</a>
+      <a class="btn btn-ghost" href="#visit">Find us</a>
+    </div>
+    <div class="stats"><div class='stat'><b>4.7</b><span>Google rating</span></div><div class='stat'><b>63</b><span>Google reviews</span></div><div class='stat'><b>6–10 AM</b><span>Mon–Sat; Sunday closed</span></div></div>
+  </div>
+</section>
+<section id="about">
+  <div class="wrap">
+    <h2 class="sec-title reveal">A morning-only gym on Chamaraja Double Road.</h2>
+    <p class="sec-lead reveal">The Google listing places Vin&#x27;s Fitness on the 2nd floor, 515/1/A, Chamaraja Double Road, Sunnadakeri, Rahmania Mohalla. Hours are 6–10 AM Monday to Saturday; Sunday is closed. A December 2024 review thanked Kishore sir for coaching and mentioned “advanced equipments” and “great results.” A September 2024 review praised trainers who “support you through your workout.” An April 2024 review was more measured: “Small gym with minimum equipment. They have educated trainers and they train well. Underground parking facilities are available.” Membership fees are not published here.</p>
+  </div>
+</section>
+<section id="services">
+  <div class="wrap">
+    <h2 class="sec-title reveal">What members have said</h2>
+    <p class="sec-lead reveal">Quoted from public Google reviews, including a more measured one.</p>
+    <div class="grid-3"><article class='card reveal'><div class='ico'><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Kishore sir</h3><p>A December 2024 review wrote: “Good coaching by kishore sir advanced equipments Great results.”</p></article><article class='card reveal'><div class='ico'><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M7 7v10M17 7v10M4 10v4M20 10v4M7 12h10"/></svg></div><h3>A compact floor</h3><p>An April 2024 review called it a “small gym with minimum equipment,” with educated trainers and underground parking. Other members have been more expansive about the kit.</p></article><article class='card reveal'><div class='ico'><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.6-7 10-7 10z"/></svg></div><h3>Morning hours only</h3><p>The listing shows 6–10 AM, Monday to Saturday, and closed on Sunday. Please reconfirm before you go.</p></article></div>
+  </div>
+</section>
+<section id="reviews">
+  <div class="wrap">
+    <h2 class="sec-title reveal">What people say on Google</h2>
+    <p class="sec-lead reveal">A few recent comments from the public Google listing, quoted in their own words.</p>
+    <div class="reviews"><article class='review reveal'><div class='stars'>★★★★★</div><p>“Good coaching by kishore sir advanced equipments Great results 👏”</p><div class='who'>Google review, Dec 2024 · wording from the public listing</div></article><article class='review reveal'><div class='stars'>★★★★★</div><p>“Best gym in the town has got the best trainers who will support you through your workout.”</p><div class='who'>Google review, Sep 2024 · wording from the public listing</div></article><article class='review reveal'><div class='stars'>★★★★☆</div><p>“Small gym with minimum equipment. They have educated trainers and they train well. Underground parking facilities are available. The atmosphere is good.”</p><div class='who'>Google review, Apr 2024 · wording from the public listing</div></article></div>
+  </div>
+</section>
+<section id="gallery">
+  <div class="wrap">
+    <h2 class="sec-title reveal">Forest, amber, chalk</h2>
+    <p class="sec-lead reveal">A visual impression of the space — colours and motifs only, not photographs.</p>
+    <div class="gallery reveal"><div class='tile t0'><span>Sunnadakeri</span></div><div class='tile t1'><span>Kishore sir</span></div><div class='tile t2'><span>6–10 AM</span></div><div class='tile t3'><span>Sunday closed</span></div></div>
+  </div>
+</section>
+<section id="visit">
+  <div class="wrap visit">
+    <div class="visit-card reveal">
+      <h3>Visit</h3>
+      <dl>
+        <dt>Address</dt><dd>2nd floor, 515/1/A, Chamaraja Double Road, Sunnadakeri, Rahmania Mohalla, Mysuru 570004</dd>
+        <dt>Phone</dt><dd><a href="tel:+918861187983">+91 88611 87983</a></dd>
+      </dl>
+      
+      <p><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Vin&#x27;s+Fitness%2C+515%2F1%2FA+Chamaraja+Double+Road+Mysuru" target="_blank" rel="noopener"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.3"/></svg> Open in Google Maps</a></p>
+    </div>
+    <div class="visit-card reveal">
+      <h3>Hours</h3>
+      <div class='hours-grid'><div>Monday</div><div>6–10 AM</div><div>Tuesday</div><div>6–10 AM</div><div>Wednesday</div><div>6–10 AM</div><div>Thursday</div><div>6–10 AM</div><div>Friday</div><div>6–10 AM</div><div>Saturday</div><div>6–10 AM</div><div>Sunday</div><div>Closed</div></div>
+      <p class="demo-note">Facts on this page are taken from the public Google listing and published coverage. No prices or awards have been added.</p>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+  <div class="cta-band reveal">
+    <div>
+      <h2>Ask about a morning slot.</h2>
+      <p>WhatsApp or call the listing number. Packages have not been published on this demo.</p>
+    </div>
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+      <a class="btn btn-solid" href="https://wa.me/918861187983" target="_blank" rel="noopener"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3z"/></svg> WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+918861187983"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.9 2z"/></svg> +91 88611 87983</a>
+    </div>
+  </div>
+</div>
+<footer class="wrap">
+  <div>Vin&#x27;s Fitness · Mysuru</div>
+  <div>Demo crafted by Zappr</div>
+</footer>
+<script>
+(function(){
+  const nav=document.querySelector('.nav');
+  const btn=document.querySelector('.menu-btn');
+  if(btn){btn.addEventListener('click',()=>nav.classList.toggle('open'));}
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  const heroBg=document.querySelector('.hero-bg');
+  window.addEventListener('scroll',()=>{
+    if(!heroBg) return;
+    heroBg.style.transform='translateY('+Math.min(window.scrollY*0.22,140)+'px)';
+  },{passive:true});
+  if(!CSS.supports('animation-timeline','view()')){
+    const io=new IntersectionObserver((ents)=>{
+      ents.forEach(e=>{if(e.isIntersecting){e.target.classList.add('js-in');e.target.classList.remove('js-hide')}})
+    },{threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>{el.classList.add('js-hide');io.observe(el)});
+  }
+})();
+</script>
+</body>
+</html>
